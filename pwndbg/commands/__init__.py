@@ -39,7 +39,7 @@ GDB_BUILTIN_COMMANDS = list_current_commands()
 
 class Command(gdb.Command):
     """Generic command wrapper"""
-    builtin_override_whitelist = {'up', 'down', 'search', 'pwd', 'start'}
+    builtin_override_whitelist = {'up', 'down', 'search', 'ps', 'pwd', 'start'}
     history = {}
 
     def __init__(self, function, prefix=False, command_name=None):
